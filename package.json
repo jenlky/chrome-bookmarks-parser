@@ -4,12 +4,17 @@
   "description": "",
   "main": "parser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node parser",
+    "start:dev": "nodemon parser"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bookmarks-parser": "^1.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }

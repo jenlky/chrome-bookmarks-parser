@@ -1,4 +1,4 @@
-const { readFile } = require("../lib/parser");
+const { readFile } = require("../lib/utils/readFile");
 const path = require("path");
 
 describe("readFile", () => {

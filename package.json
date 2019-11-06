@@ -1,20 +1,22 @@
 {
   "name": "chrome-bookmarks-parser",
   "version": "1.0.0",
-  "description": "",
+  "description": "Parse Chrome bookmarks into a list of titles and URIs",
   "main": "parser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "start": "node parser",
     "start:dev": "nodemon parser"
   },
   "keywords": [],
-  "author": "",
+  "author": "jenlky",
   "license": "ISC",
   "dependencies": {
     "bookmarks-parser": "^1.5.0"
   },
   "devDependencies": {
+    "jest": "^24.9.0",
     "nodemon": "^1.19.4"
   }
 }

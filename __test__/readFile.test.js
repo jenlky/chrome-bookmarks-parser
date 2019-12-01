@@ -7,8 +7,7 @@ describe("readFile", () => {
   });
 
   it("should read file", async () => {
-    const filePath = path.resolve(__dirname, "./files/chrome_bookmarks.html");
-    const data = await readFile(filePath);
+    const data = await readFile(path.resolve(__dirname, "./files/chrome_bookmarks.html"));
     expect(data).toHaveProperty("parser");
     expect(data).toHaveProperty("bookmarks");
   });
